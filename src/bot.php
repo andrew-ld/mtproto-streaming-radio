@@ -74,6 +74,7 @@ class EventHandler extends \danog\MadelineProto\EventHandler {
             if ($state < \danog\MadelineProto\VoIP::CALL_STATE_ENDED) {
                 if (!$call[0]->isPlaying() && $call[1] != $chk) {
                     $call[0]->play($chk);
+                    $call[1] = $chk;
                 }
             }
 
