@@ -31,7 +31,7 @@ FFMPEG = f"ffmpeg -i '{URL}' {CONN_FLAGS} {ENC_FLAGS} -y -filter_complex '{FILTE
 
 if os.path.isdir(OUTPUT):
  for file in os.listdir(OUTPUT):
-  os.remove(OUPUT + file)
+  os.remove(OUTPUT + file)
 
 else:
  os.mkdir(OUTPUT)
